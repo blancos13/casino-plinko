@@ -23,16 +23,6 @@ import classnames from 'classnames';
 import $ from 'jquery';
 
 const Plinko = () => {
-  const [socket, setSocket] = useState(null);
-  const [username, setUsername] = useState('');
-  const [balance, setBalance] = useState(0.00);
-  const [level, setLevel] = useState('');
-  const nrRoll_1 = getRandomInt(0, 9);
-  const nrRoll_2 = getRandomInt(0, 9);
-  const nrRoll_3 = getRandomInt(0, 9);
-  const nrRoll_4 = getRandomInt(0, 9);
-  const [currentRoll, setCurrentRoll] = useState(null);
-  const [crashPoint, setCrashPoint] = useState(null);
   const [playerWinss, setPlayerWinss] = useState(false);
 const [playerLosts, setPlayerLosts] = useState(false);
 const difficulties = ['low', 'medium', 'high'];
